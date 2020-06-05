@@ -33,9 +33,9 @@ const reducer = (accumulator, currentValue) => accumulator * currentValue;
 
 let totalFromNum = numbersToArray.reduce(reducer);
 console.log('Произведение цифр из переменной num: ', totalFromNum);
-let totalMultiplied = totalFromNum ** 3;
-console.log('Возведение в степень 3: ', totalMultiplied);
-let newNum = totalMultiplied.toString();
-let finalNumber = newNum.substring(0, 2);
-console.log('Первые 2 цифры полученного числа: ', parseInt(finalNumber));
+let totalNumMultiplied = totalFromNum ** 3;
+console.log('Возведение в степень 3: ', totalNumMultiplied);
+let newNumToStr = totalNumMultiplied.toString();
+let finalNum = newNumToStr.substring(0, 2);
+console.log('Первые 2 цифры полученного числа: ', parseInt(finalNum));
 
