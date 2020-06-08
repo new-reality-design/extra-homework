@@ -71,17 +71,39 @@ array.forEach(item => {
 });
 */
 
-/*
-У нас есть переменная namePerson. Если значение этой переменной “Артем” то вывести в консоль “директор”, если значение “Максим” то вывести в консоль “преподаватель”, с любым другим значением вывести в консоль “студент”
+let langQuestion4 = prompt('(4)- Выбор языка: ru / en', 'ru');
+let lang = langQuestion4;
+// let lang = 'ru';
+// let lang = 'en';
 
-	Решить задачу с помощью нескольких тернарных операторов, без использования if или switch
- *
+let arrObj = {
+  ru: [
+    'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'
+  ],
+  en: [
+    'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'
+  ]
+};
+
+console.log('Language', arrObj[lang]);
+// console.log(arrObj.en);
+
+let output6 = document.querySelector('.output-6');
+arrObj[lang].forEach(item => {
+  output6.innerHTML += item + ' ';
+});
+// let lang = document.querySelector('.output-6').innerHTML;
+// let lang = document.querySelector('.output-7');
+
+
+/*
+У нас есть переменная namePerson. Если значение этой переменной “Артем” то вывести в консоль “директор”, если значение “Максим” то вывести в консоль “преподаватель”, 
+//с любым другим значением вывести в консоль “студент”
+Решить задачу с помощью нескольких тернарных операторов, без использования if или switch
  */
 
-
-
-let namePerson = 'Артем';
-// let namePerson = 'Максим';
+// let namePerson = 'Артем';
+let namePerson = 'Максим';
 
 namePerson === 'Артем' ? console.log('Директор')
   : namePerson === 'Максим' ? console.log('Преподаватель')
