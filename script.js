@@ -25,20 +25,21 @@ const trimText = function (text) {
   } else if (text.length > 30) {
     console.log('Оригинальная строка длиннее чем 30 символов - ', text, text.length);
     result = text.trim().slice(0, 30) + '...';
-    console.log('Обрезанная строка- ', result, result.length);
+    console.log('result- Обрезанная строка и её длина- ', result, result.length);
   } else {
-    console.log('Оригинальная строка- ', text, text.length);
-    console.log(result = text.trim(), result.length);
+    result = text.trim();
+    console.log('Оригинальная строка и её длина- ', text, text.length);
+    console.log('result- Обрезанная строка и её длина- ', result, result.length);
   }
 };
 
 //Вызовы для проверок-
 
-// trimText(textString);
+trimText(textString);
 // trimText(textStringSpaces);
-// trimText(textStringShort);
+trimText(textStringShort);
 
-// trimText(numbers);
+trimText(numbers);
 // trimText(empty);
 // trimText(unknown);
 
