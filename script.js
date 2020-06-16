@@ -13,7 +13,6 @@
 
 //1
 const arr = ['424', '555', '787', '111', '222', '892', '245', '909', '413', '455'];
-console.log(arr);
 
 let newArr = arr.filter(item => {
   if (item[0] === '2' || item[0] === '4') {
