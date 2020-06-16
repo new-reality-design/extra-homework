@@ -20,34 +20,10 @@ let newArr = arr.filter(item => {
     return true;
   }
 });
-
 console.log('newArr: ', newArr);
 
 
 //2
-// const isPrime = function (num) {
-//   if (num < 2) {
-//     return false;
-//   }
-//   for (let i = 2; i < num; i++) {
-//     if (num % i === 0) {
-//       return false;
-//     }
-//   }
-//   return true;
-// }
-// for (let i = 0; i < 100; i++) {
-//   let one = '1';
-//   if (isPrime(i)) {
-//     console.log(i, 'Делители этого числа: ' + one + ' и ' + i);
-//   }
-// }
-
-// let showRes = isPrime(100);
-// console.log('showRes: ', showRes);
-
-
-//3
 const isPrimeNumber = function (num) {
   for (let i = 2; i * i <= num; i === 2 ? i++ : i += 2) {
     if (num % i === 0) {
