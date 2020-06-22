@@ -17,21 +17,22 @@ function displayAllDays() {
   let time = new Date(),
     dayOfWeek = time.getDay();
 
-  let bold = 'font-weight: bold';
+  // let dayOfWeek = 7;
+
+  let bold = 'font-weight: 900';
   let italic = 'font-style: italic';
   let italicBold = [
-    'font-weight: bold',
-    'font-style: italic'
+    'font-style: italic;', 'font-weight: bold;'
   ].join('');
 
   week.forEach((item, index) => {
 
-    if (index + 1 === dayOfWeek) {
-      console.log('%c%s', bold, item);
+    if (index + 1 === dayOfWeek && (item === 'Saturday' || item === 'Sunday')) {
+      console.log('%c%s', italicBold, item);
     }
 
-    else if (index + 1 === dayOfWeek && (item === 'Saturday' || item === 'Sunday')) {
-      console.log('%c%s', italicBold, item);
+    else if (index + 1 === dayOfWeek) {
+      console.log('%c%s', bold, item);
     }
 
     else if (item === 'Saturday' || item === 'Sunday') {
